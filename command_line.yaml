@@ -1,2 +1,3 @@
 - platform: command_line
   command: 'ls -l home-assistant_v2.db'
+  scan_interval: 30 # it will be ignored anyway ;)
