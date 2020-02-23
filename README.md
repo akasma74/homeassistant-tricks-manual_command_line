@@ -27,5 +27,5 @@ sensor:
 If you need to do it with more than one standard integration:
 - repeat step 3 adding comma-separated remaining integrations' domains ("[sensor, binary_sensor]")
 - add remaining `import`s similar to the [original one](custom_components/manual_command_line/__init__.py#L3)
-- make sure all `as xxx` have unique `xxx`
-- use these `xxx` instead of `sensor` create as many `sensor.CommandSensor.should_poll = should_poll` as necessary. Note that you'll need to change class name (`CommandSensor`) to a class name that your standard integration is based on.
+- make sure all [`as xxx`](custom_components/manual_command_line/__init__.py#L3) have unique `xxx`
+- use these `xxx` instead of `sensor` create as many [`sensor.CommandSensor.should_poll = should_poll`](custom_components/manual_command_line/__init__.py#L9) as necessary. Note that you'll need to change class name (`CommandSensor`) to a class name that your standard integration is based on.
