@@ -1,0 +1,9 @@
+{
+  "domain": "manual_command_line",
+  "name": "Manualy updated command_line sensor",
+  "documentation": "",
+  "dependencies": [],
+  "after_dependencies": ["command_line"],
+  "codeowners": [],
+  "requirements": []
+}

@@ -1,0 +1,4 @@
+homeassistant:
+
+manual_command_line:
+sensor: command_line.yaml
