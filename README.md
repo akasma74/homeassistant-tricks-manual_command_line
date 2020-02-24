@@ -1,7 +1,7 @@
 # Home Assistant tricks: manually updated sensor
 How to make ANY Entity-based sensor updatable only upon request (standard `command_line` integration as an example)
 
-If you want to stop HA from updating state of your Entity-based sensor (anything that accepts [`scan_interval`](https://www.home-assistant.io/docs/configuration/platform_options/#scan-interval) configuration variable) so you can update it when you need by calling `homeassistant.update_entity`, it's possible using monkey patching and custom integrations.
+If you want to stop HA from updating state of your Entity-based sensor (anything that accepts [`scan_interval`](https://www.home-assistant.io/docs/configuration/platform_options/#scan-interval) configuration variable) so you can update it when you need by calling `homeassistant.update_entity`, it's possible using monkey patching and custom integrations.  
 **Note**: you should understand that you're playing with HA's internals and your code would break if something changes in HA (class renamed, file structure changed etc). Keep it in mind when designing your setup around this functionality.
 
 You will need to:
